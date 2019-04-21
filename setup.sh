@@ -1,3 +1,9 @@
+# heroku postgres keys for testing projects
+echo "export USER_NODECRUD=\"nswsrcytjxtmqv\"" >> ~/.bashrc
+echo "export HOST_NODECRUD=\"ec2-184-72-238-22.compute-1.amazonaws.com\"" >> ~/.bashrc
+echo "export DATABASE_NODECRUD=\"d12f1ll1geqc36\"" >> ~/.bashrc
+echo "export PASSWORD_NODECRUD=\"cf4c0209208d76e86dc8eaf42861b0ef9b545c15a316dd8d342b171a3a4e0a40\"" >> ~/.bashrc
+
 # install git
 sudo apt-get update
 sudo apt-get install git-core
@@ -54,6 +60,7 @@ sudo apt-get install curl python-software-properties
 curl -sL https://deb.nodesource.com/setup_11.x | sudo bash -
 
 # install Node.js
+npm audit fix
 sudo apt-get install nodejs
 node -v
 npm -v
